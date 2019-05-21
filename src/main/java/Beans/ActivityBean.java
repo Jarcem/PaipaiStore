@@ -20,6 +20,9 @@ public class ActivityBean {
     private int activity_endtime;
     private String activity_message;
 
+    public ActivityBean() {
+    }
+
     public int getActivity_id() {
         return activity_id;
     }

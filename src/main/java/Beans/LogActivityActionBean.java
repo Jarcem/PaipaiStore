@@ -15,6 +15,9 @@ public class LogActivityActionBean {
     private int action_time;
     private String ip_address;
 
+    public LogActivityActionBean() {
+    }
+
     public int getLog_id() {
         return log_id;
     }

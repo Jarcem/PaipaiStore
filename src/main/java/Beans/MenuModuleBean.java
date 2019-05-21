@@ -13,6 +13,9 @@ public class MenuModuleBean {
     private String menu_module_name;
     private int menu_module_permissions_id;
 
+    public MenuModuleBean() {
+    }
+
     public int getMenu_module_id() {
         return menu_module_id;
     }

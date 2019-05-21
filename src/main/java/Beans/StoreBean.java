@@ -18,6 +18,9 @@ public class StoreBean {
     private BigDecimal store_share_rate;
     private int store_status;
 
+    public StoreBean() {
+    }
+
     public int getStore_id() {
         return store_id;
     }

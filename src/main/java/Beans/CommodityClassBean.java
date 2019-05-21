@@ -13,6 +13,9 @@ public class CommodityClassBean {
     private String class_name;
     private int class_status;
 
+    public CommodityClassBean() {
+    }
+
     public int getCommodity_class_id() {
         return commodity_class_id;
     }

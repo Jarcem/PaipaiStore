@@ -14,6 +14,9 @@ public class ProposalBean {
     private int proposal_time;
     private int proposal_status;
 
+    public ProposalBean() {
+    }
+
     public int getProposal_id() {
         return proposal_id;
     }

@@ -13,6 +13,9 @@ public class LogUserActionBean {
     private int action_type;
     private String ip_address;
 
+    public LogUserActionBean() {
+    }
+
     public int getLog_id() {
         return log_id;
     }

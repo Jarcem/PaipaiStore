@@ -17,6 +17,9 @@ public class ReportStoreBean {
     private BigDecimal store_profit;
     private int report_time;
 
+    public ReportStoreBean() {
+    }
+
     public int getReport_id() {
         return report_id;
     }

@@ -16,6 +16,9 @@ public class ReportUserBean {
     private BigDecimal user_income;
     private int report_time;
 
+    public ReportUserBean() {
+    }
+
     public int getReport_id() {
         return report_id;
     }

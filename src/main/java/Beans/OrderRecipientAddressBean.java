@@ -18,6 +18,9 @@ public class OrderRecipientAddressBean {
     private String address_free;
     private int address_status;
 
+    public OrderRecipientAddressBean() {
+    }
+
     public int getOrder_recipient_address_id() {
         return order_recipient_address_id;
     }

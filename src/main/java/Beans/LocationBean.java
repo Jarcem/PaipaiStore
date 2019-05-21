@@ -12,6 +12,9 @@ public class LocationBean {
     private String location_name;
     private String location_coodinate;
 
+    public LocationBean() {
+    }
+
     public int getLocation_id() {
         return location_id;
     }

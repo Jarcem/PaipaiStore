@@ -12,6 +12,9 @@ public class BroadCastBean {
     private int broadcast_mode;
     private int broadcast_target_id;
 
+    public BroadCastBean() {
+    }
+
     public int getBroadcast_id() {
         return broadcast_id;
     }

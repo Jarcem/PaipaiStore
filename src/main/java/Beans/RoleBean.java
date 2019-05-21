@@ -13,6 +13,9 @@ public class RoleBean {
     private String role_permissions;
     private int role_status;
 
+    public RoleBean() {
+    }
+
     public int getRole_id() {
         return role_id;
     }

@@ -25,6 +25,9 @@ public class OrderBean {
     private int order_ordertime;
     private int order_paymenttime;
 
+    public OrderBean() {
+    }
+
     public int getOrder_id() {
         return order_id;
     }

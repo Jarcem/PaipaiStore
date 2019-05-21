@@ -18,6 +18,9 @@ public class StorageBean {
     private BigDecimal storage_warning_threshold;
     private int storage_warning_switch;
 
+    public StorageBean() {
+    }
+
     public int getStorage_info_id() {
         return storage_info_id;
     }

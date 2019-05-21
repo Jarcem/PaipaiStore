@@ -14,6 +14,9 @@ public class WageAlgorithmBean {
     private String wage_unit;
     private BigDecimal wage_unit_price;
 
+    public WageAlgorithmBean() {
+    }
+
     public int getWage_type_id() {
         return wage_type_id;
     }

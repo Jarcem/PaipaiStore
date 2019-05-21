@@ -13,6 +13,9 @@ public class ScheduleBean {
     private int delivery_id;
     private int schdule_work_time;
 
+    public ScheduleBean() {
+    }
+
     public int getSchdule_id() {
         return schdule_id;
     }

@@ -17,6 +17,9 @@ public class ReportHeadquartersBean {
     private int income_total;
     private int report_time;
 
+    public ReportHeadquartersBean() {
+    }
+
     public int getReport_id() {
         return report_id;
     }

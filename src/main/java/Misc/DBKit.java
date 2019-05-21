@@ -8,16 +8,18 @@ public class DBKit {
     private static String connection_url = "jdbc:mysql://.../PaipaiStoreDB";
     private static String user_name = "123";
     private static String password = "123";
+    private static String format_keyword = "|";
 
     static {
         try {
             Class.forName(driver_class_name);
             Properties properties = new Properties();
             properties.load(DBKit.class.getClassLoader().getResourceAsStream("/conf/database.conf"));
-            setDriver_class_name(properties.getProperty(driver_class_name));
-            setConnection_url(properties.getProperty(connection_url));
-            setUser_name(properties.getProperty(user_name));
-            setPassword(properties.getProperty(password));
+            setDriver_class_name(properties.getProperty("driver_class_name"));
+            setConnection_url(properties.getProperty("connection_url"));
+            setUser_name(properties.getProperty("user_name"));
+            setPassword(properties.getProperty("password"));
+            setFormat_keyword(properties.getProperty("format_keyword"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -28,22 +30,22 @@ public class DBKit {
         return connection;
     }
 
-    public static void closeAll(Connection con, Statement sta, ResultSet rs){
-        if (rs != null){
+    public static void closeAll(Connection con, Statement sta, ResultSet rs) {
+        if (rs != null) {
             try {
                 rs.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        if (sta != null){
+        if (sta != null) {
             try {
                 sta.close();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
-        if (con != null){
+        if (con != null) {
             try {
                 con.close();
             } catch (SQLException e) {
@@ -82,5 +84,13 @@ public class DBKit {
 
     public static void setPassword(String password) {
         DBKit.password = password;
+    }
+
+    public static String getFormat_keyword() {
+        return format_keyword;
+    }
+
+    public static void setFormat_keyword(String format_keyword) {
+        DBKit.format_keyword = format_keyword;
     }
 }

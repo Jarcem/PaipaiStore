@@ -22,6 +22,9 @@ public class UserBean {
     private String pack;
     private int register_date;
 
+    public UserBean() {
+    }
+
     public int getUser_id() {
         return user_id;
     }

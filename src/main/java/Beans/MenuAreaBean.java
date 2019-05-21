@@ -12,6 +12,9 @@ public class MenuAreaBean {
     private int menu_area_level;
     private String menu_area_name;
 
+    public MenuAreaBean() {
+    }
+
     public int getMenu_area_id() {
         return menu_area_id;
     }

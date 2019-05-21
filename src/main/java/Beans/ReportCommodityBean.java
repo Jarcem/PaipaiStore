@@ -17,6 +17,9 @@ public class ReportCommodityBean {
     private BigDecimal commodity_profit;
     private int report_time;
 
+    public ReportCommodityBean() {
+    }
+
     public int getReport_id() {
         return report_id;
     }

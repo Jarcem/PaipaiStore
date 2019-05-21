@@ -16,6 +16,9 @@ public class ScheduleWorkTimeBean {
     private int weekday;
     private BigDecimal work_time;
 
+    public ScheduleWorkTimeBean() {
+    }
+
     public int getSchedule_work_time_id() {
         return schedule_work_time_id;
     }

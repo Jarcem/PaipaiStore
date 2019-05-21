@@ -15,6 +15,9 @@ public class ReportPayrollBean {
     private int payment_user_id;
     private int settel_time;
 
+    public ReportPayrollBean() {
+    }
+
     public int getReport_id() {
         return report_id;
     }

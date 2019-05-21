@@ -11,6 +11,9 @@ public class PermissionsBean {
     private int permissions_id;
     private String permissions_info;
 
+    public PermissionsBean() {
+    }
+
     public int getPermissions_id() {
         return permissions_id;
     }

@@ -21,6 +21,9 @@ public class CommodityBean {
     private int commodity_status;
     private String commodity_unit;
 
+    public CommodityBean() {
+    }
+
     public int getCommodity_id() {
         return commodity_id;
     }

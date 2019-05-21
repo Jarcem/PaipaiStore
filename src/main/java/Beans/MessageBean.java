@@ -15,6 +15,9 @@ public class MessageBean {
     private int msg_status;
     private int msg_time;
 
+    public MessageBean() {
+    }
+
     public int getMessage_id() {
         return message_id;
     }

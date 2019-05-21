@@ -18,6 +18,9 @@ public class WageSettlementPayrollBean {
     private BigDecimal total_wage;
     private int wage_time;
 
+    public WageSettlementPayrollBean() {
+    }
+
     public int getWage_settlement_payroll_id() {
         return wage_settlement_payroll_id;
     }
