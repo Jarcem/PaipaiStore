@@ -20,6 +20,7 @@ public class CommodityBean {
     private BigDecimal commodity_price;
     private int commodity_status;
     private String commodity_unit;
+    private long commodity_register_time;
 
     public CommodityBean() {
     }
@@ -102,5 +103,13 @@ public class CommodityBean {
 
     public void setCommodity_unit(String commodity_unit) {
         this.commodity_unit = commodity_unit;
+    }
+
+    public long getCommodity_register_time() {
+        return commodity_register_time;
+    }
+
+    public void setCommodity_register_time(long commodity_register_time) {
+        this.commodity_register_time = commodity_register_time;
     }
 }
