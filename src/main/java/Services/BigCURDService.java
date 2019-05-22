@@ -14,6 +14,6 @@ import java.util.Map;
 public interface BigCURDService {
     public int add(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
     public int delete(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
-    public int update(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
+    public int update(String formName, List<Map<String, Object>> params, Object obj, String identify) throws Exception;
     public List<Object> query(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
 }
