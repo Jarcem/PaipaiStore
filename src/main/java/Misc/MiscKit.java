@@ -7,7 +7,7 @@ package Misc;
   Purpose: can not merge kit
 */
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -29,35 +29,27 @@ public class MiscKit {
         return pattern.matcher(str).matches();
     }
 
-    //int数组转数据库格式
-    public static String transportArrayToDatabase(List<Integer> array) {
-        String str = null;
+    //数据库转String
+    public static List<String> transformToList(String string){
+        List<String> stringList = Arrays.asList(string.split(","));
 
-        if (array != null) {
-            for (int num : array) {
-                str = (num == 0 ? String.valueOf(num) : str + "|" + String.valueOf(num));
-            }
-        }
+        return stringList;
+    }
+
+    //String转数据库
+    public static String transfromToString(List<String> stringList){
+        String str = stringList.toString().replaceAll(" ", "");
+        str = str.substring(1, str.length()-1);
 
         return str;
     }
 
-    public static List<Integer> transportDatabaseToArray(String str) {
-        List<Integer> array = new ArrayList<>(), key = new ArrayList<>();
-        int counter = (isNotNull(str) ? str.indexOf("|") : -1);
-        while (counter != -1) {
-            key.add(counter);
-            counter = str.indexOf("|", counter + 1);
-        }
-        System.out.println(key.toString());
-        for (int i = 0; i < key.size(); i++) {
-            if (i == 0) {
-                array.add(Integer.valueOf(str.substring(i, key.get(i))));
-            } else {
-                array.add(Integer.valueOf(str.substring(key.get(i - 1) + 1, key.get(i))));
-            }
-        }
+    //取商品编号和数量
+    public static int[] getNumberAndPrice(String string){
+        int[] ints = new int[2];
+        ints[0] = Integer.valueOf(string.substring(0, string.indexOf(".")));
+        ints[1] = Integer.valueOf(string.substring(string.indexOf(".")+1, string.length()));
 
-        return array;
+        return ints;
     }
 }

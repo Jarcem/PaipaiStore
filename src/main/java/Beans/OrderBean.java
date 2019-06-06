@@ -12,18 +12,20 @@ import java.math.BigDecimal;
 public class OrderBean {
     private int order_id;
     private int order_no;
-    private BigDecimal order_amount;
-    private BigDecimal order_delivery_free;
-    private int order_payment_part;
-    private int order_status;
+    private BigDecimal order_amount;//总计
+    private BigDecimal order_delivery_free;//配送费
+    private int order_payment_part;//支付方式
+    private int order_status;//0-in the shopcart 1-already paid 2-in delivery 3-already signed 4-cancelled 5-closed
     private int order_delivery_man_id;
-    private String order_recipient;
+    private String order_recipient;//收件人
     private int order_recipient_address;
-    private String order_note;
+    private String order_note;//订单备注
     private int order_activity;
-    private String order_remarks;
+    private String order_remarks;//订单评价
     private int order_ordertime;
     private int order_paymenttime;
+    private String order_info;//订单内容
+    private int order_holder;
 
     public OrderBean() {
     }
@@ -138,5 +140,21 @@ public class OrderBean {
 
     public void setOrder_paymenttime(int order_paymenttime) {
         this.order_paymenttime = order_paymenttime;
+    }
+
+    public String getOrder_info() {
+        return order_info;
+    }
+
+    public void setOrder_info(String order_info) {
+        this.order_info = order_info;
+    }
+
+    public int getOrder_holder() {
+        return order_holder;
+    }
+
+    public void setOrder_holder(int order_holder) {
+        this.order_holder = order_holder;
     }
 }

@@ -11,6 +11,7 @@ public class BroadCastBean {
     private int broadcast_id;
     private int broadcast_mode;
     private int broadcast_target_id;
+    private String broadcast_message;
 
     public BroadCastBean() {
     }
@@ -37,5 +38,13 @@ public class BroadCastBean {
 
     public void setBroadcast_target_id(int broadcast_target_id) {
         this.broadcast_target_id = broadcast_target_id;
+    }
+
+    public String getBroadcast_message() {
+        return broadcast_message;
+    }
+
+    public void setBroadcast_message(String broadcast_message) {
+        this.broadcast_message = broadcast_message;
     }
 }

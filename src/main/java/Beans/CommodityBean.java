@@ -15,7 +15,7 @@ public class CommodityBean {
     private int commodity_barcode;
     private String commodity_image;
     private String commodity_name;
-    private String commodity_label;
+    private String commodity_explain;
     private BigDecimal commodity_cost;
     private BigDecimal commodity_price;
     private int commodity_status;
@@ -65,12 +65,12 @@ public class CommodityBean {
         this.commodity_name = commodity_name;
     }
 
-    public String getCommodity_label() {
-        return commodity_label;
+    public String getCommodity_explain() {
+        return commodity_explain;
     }
 
-    public void setCommodity_label(String commodity_label) {
-        this.commodity_label = commodity_label;
+    public void setCommodity_explain(String commodity_explain) {
+        this.commodity_explain = commodity_explain;
     }
 
     public BigDecimal getCommodity_cost() {

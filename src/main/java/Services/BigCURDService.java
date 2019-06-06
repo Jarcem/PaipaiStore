@@ -7,13 +7,19 @@ package Services;
   Purpose: 通用增删改查聚合类
 */
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
 public interface BigCURDService {
-    public int add(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
-    public int delete(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
-    public int update(String formName, List<Map<String, Object>> params, Object obj, String identify) throws Exception;
-    public List<Object> query(String formName, List<Map<String, Object>> params, Object obj) throws Exception;
+    public int add(String formName, List<Map<String, Object>> params);
+
+    public int delete(String formName, List<Map<String, Object>> params, Object obj);
+
+    public int update(String formName, List<Map<String, Object>> params, String identify);
+
+    public List<Object> query(String formName, List<Map<String, Object>> params, Object obj);
+
+    public List<Object> query(String formName, Object obj);
+
+    public int loginCheck(String username, String password);
 }

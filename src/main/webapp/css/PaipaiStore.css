@@ -1,0 +1,21 @@
+.magicShow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.magicShowItem {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.bottombar {
+  position: fixed;
+  bottom: 0;
+}
+.test{
+  background: black;
+}
